@@ -9,7 +9,7 @@ function cekStorage() {
 
 document.querySelector("#tambahBuku").addEventListener('click', () => {
     titleResult.textContent = "Tambah Buku";
-    wraperResult.innerHTML = `
+    wraperResult.innerHTML =`
         <div class="container-form">
         <form action="">
         <input class="inputTambah" type="text" id="title" name="title" placeholder="Masukan judul buku"><br>
@@ -26,7 +26,9 @@ document.querySelector("#tambahBuku").addEventListener('click', () => {
 function inputData() {
     let titleBuku = document.querySelector("#title").value;
     let authorBuku = document.querySelector("#author").value;
-    let tahunBuku = document.querySelector("#tahun").value;
+    let tahunBuku = document.querySelector("#tahun");
+    let getValue = tahunBuku.value;
+    let getInt = parseInt(getValue);
     let getcheckbox = document.querySelector("#checkbox");
     const valueOfCheckbox = getcheckbox.checked;
     const timestamp = new Date().getTime();
@@ -35,7 +37,7 @@ function inputData() {
         id: timestamp,
         judul: titleBuku,
         author: authorBuku,
-        tahun: tahunBuku,
+        tahun: getInt,
         isComplete: valueOfCheckbox
     };
     putDataOnStorage(myBook);
@@ -96,7 +98,6 @@ function ubahBuku(i) {
     const dataBuku = getDataBuku();
     dataBuku.forEach((object) => {
         if (object.id === i) {
-            console.log(i)
             if (object.isComplete === true) {
                 const getIndex = dataBuku.indexOf(object);
                 dataBuku[getIndex].isComplete = false;
