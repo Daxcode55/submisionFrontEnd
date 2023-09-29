@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>BooksApp</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <i class="fa-solid fa-book"></i>
+            <h1>BooksShelf</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-main-content">
+            <aside>
+                <div class="container-card-colum">
+                    <div class="card sudah">
+                        <h3>Selesai dibaca</h3>
+                        <p>Semua buku yang sudah selesai Anda baca akan tersimpan disini.</p>
+                        <button class="btnSelesai" id="btnAll">Show Books</button>
+                    </div>
+                    <div class="card belum">
+                        <h3>Belum selesai dibaca</h3>
+                        <p>Semua buku yang belum selesai Anda baca akan tersimpan disini.</p>
+                        <button class="btnBelumSelesai" id="btnAll">Show Books</button>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="container-showBooks">
+                <div class="wraper-fitur">
+                    <input id="cariBuku" type="text" placeholder="Search Books...">
+                    <button id="cari">cari</button>
+                    <div class="containerBtn">
+                        <button class="btnShowAll" id="btnAll">Lihat Semua Buku</button>
+                        <button id="tambahBuku">Tambah Buku</button>
+                        <p id="jumlahBuku"></p>
+                    </div>
+                </div>
+                <div class="wraper-showBooks">
+                    <h2 id="titleResult">Semua Buku</h2>
+                    <div class="wraper-result"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script/script.js"></script>
+</body>
+
+</html>

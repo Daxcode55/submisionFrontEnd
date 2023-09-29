@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&family=Quicksand:wght@500;700&family=Roboto&family=Rowdies:wght@300&family=Skranji:wght@400;700&display=swap');
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #0096FF;
+    --mainColor: #5800FF;
+    --fontcolor: rgb(255, 255, 255);
+    --othercolor: #00D7FF;
+    --btnColor: #72FFFF;
+}
+
+body {
+    font-family: 'Concert One', cursive;
+}
+
+body button {
+    cursor: pointer;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: -1px 2px 5px 0px var(--mainColor);
+    -webkit-box-shadow: -1px 2px 5px 0px var(--mainColor);
+    -moz-box-shadow: -1px 2px 5px 0px var(--mainColor);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+header nav .fa-book {
+    font-size: 38px;
+    color: var(--mainColor);
+}
+
+header nav h1 {
+    font-size: 35px;
+    color: var(--mainColor);
+}
+
+main {
+    max-width: 100%;
+}
+
+main .container-main-content {
+    display: flex;
+    width: 100%;
+}
+
+aside {
+    width: 40%;
+}
+
+aside .container-card-colum {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+aside .container-card-colum .card {
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(var(--mainColor), var(--bgcolor));
+    box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.78);
+}
+
+.card h3 {
+    font-size: 34px;
+    color: var(--fontcolor);
+}
+
+.card p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: var(--othercolor);
+    font-weight: 500;
+}
+
+.card button {
+    margin-top: 40px;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--btnColor);
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #4fdada;
+    color: var(--fontcolor);
+}
+
+
+.container-showBooks {
+    width: 60%;
+}
+
+.container-showBooks .wraper-fitur {
+    background-image: linear-gradient(to right, var(--othercolor), var(--bgcolor));
+    max-width: 600px;
+    margin: 30px 0 0 10px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.wraper-fitur input {
+    width: 350px;
+    padding: 9px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #eaeaea;
+}
+
+.wraper-fitur button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--btnColor);
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+.wraper-fitur button:hover {
+    background-image: linear-gradient(to right, var(--bgcolor), var(--othercolor));
+    color: var(--fontcolor);
+}
+
+.containerBtn {
+    margin-top: 10px;
+}
+
+.containerBtn p {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--fontcolor);
+    margin-left: 10px;
+}
+
+.wraper-showBooks {
+    max-width: 700px;
+    height: 400px;
+    margin: 15px 0 0 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #eaeaea;
+    box-shadow: -1px 2px 5px 0px var(--mainColor);
+    -webkit-box-shadow: -1px 2px 5px 0px var(--mainColor);
+    -moz-box-shadow: -1px 2px 5px 0px var(--mainColor);
+}
+
+.wraper-showBooks h2 {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.container-showBooks .container-cards-books {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow-y: scroll;
+    height: 320px;
+    margin-top: 15px;
+}
+
+.container-cards-books .card-content {
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, var(--bgcolor), var(--othercolor));
+}
+
+.card-content ul li {
+    list-style-type: none;
+    font-size: 19px;
+    color: rgb(44, 44, 44);
+}
+
+.card-content .btn-card {
+    margin-top: 10px;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: var(--btnColor);
+    color: var(--mainColor);
+    transition: 0.5s;
+}
+
+.card-content .btn-card:hover {
+    background-image: linear-gradient(to right, var(--othercolor), var(--bgcolor));
+    color: white;
+}
+
+.container-form {
+    background-image: linear-gradient(to right, var(--othercolor), var(--bgcolor));
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 380px;
+}
+
+.container-form .inputTambah {
+    width: 350px;
+    padding: 9px 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #eaeaea;
+}
+
+.checkbox {
+    margin: 10px 0 0 10px;
+}
+
+.container-form button {
+    padding: 6px 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--btnColor);
+    color: var(--mainColor);
+    transition: 0.5s;
+}
+
+.container-form button:hover {
+    background-image: linear-gradient(to right, var(--bgcolor), var(--othercolor));
+    color: var(--fontcolor);
+}
